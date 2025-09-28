@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Préstamos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/historial.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="position-sticky h-100 d-flex flex-column justify-content-between">
+                    <ul class="nav flex-column align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><span class="sidebar-icon">🏠</span>Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="prestamos.html"><span class="sidebar-icon">📋</span>Préstamos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="usuarios.html"><span class="sidebar-icon">👤</span>Usuarios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="libros.html"><span class="sidebar-icon">📚</span>Libros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="historial.html"><span class="sidebar-icon">🕑</span>Historial</a></li>
+                    </ul>
+                    <div class="nav-bottom w-100">
+                        <a class="nav-link" href="login.html"><span class="sidebar-icon">🚪</span>Salir</a>
+                    </div>
+                </div>
+            </nav>
+            <main class="col-md-10 ms-sm-auto px-md-4 mt-5">
+    <main class="container mt-5">
+        <h1 class="mb-4">Historial de Préstamos</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped" id="tablaHistorial">
+                        <thead>
+                            <tr>
+                                <th>Usuario</th>
+                                <th>Libro</th>
+                                <th>Fecha Préstamo</th>
+                                <th>Fecha Devolución</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Historial dinámico -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">&copy; 2025 Biblioteca</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Libros</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/libros.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="position-sticky h-100 d-flex flex-column justify-content-between">
+                    <ul class="nav flex-column align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><span class="sidebar-icon">🏠</span>Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="prestamos.html"><span class="sidebar-icon">📋</span>Préstamos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="usuarios.html"><span class="sidebar-icon">👤</span>Usuarios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="libros.html"><span class="sidebar-icon">📚</span>Libros</a></li>
+
+                    </ul>
+                    <div class="nav-bottom w-100">
+                        <a class="nav-link" href="login.html"><span class="sidebar-icon">🚪</span>Salir</a>
+                    </div>
+                </div>
+            </nav>
+            <main class="col-md-10 ms-sm-auto px-md-4 mt-5">
+    <main class="container mt-5">
+        <h1 class="mb-4">Gestión de Libros</h1>
+        <div class="card mb-4">
+            <div class="card-body">
+                <form id="libroForm" class="row g-3">
+                    <div class="col-md-3">
+                        <label for="titulo" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="titulo" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="autor" class="form-label">Autor</label>
+                        <input type="text" class="form-control" id="autor" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="anio" class="form-label">Año</label>
+                        <input type="number" class="form-control" id="anio" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="stock" class="form-label">Stock</label>
+                        <input type="number" class="form-control" id="stock" min="1" required>
+                    </div>
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-primary">Agregar Libro</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Libros Registrados</h5>
+                <div class="table-responsive">
+                    <table class="table table-striped" id="tablaLibros">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Autor</th>
+                                <th>Año</th>
+                                <th>Stock</th>
+                                <th>Prestados</th>
+                                <th>Disponibles</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Libros dinámicos -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">&copy; 2025 Biblioteca</div>
+    </footer>
+</body>
+</html>

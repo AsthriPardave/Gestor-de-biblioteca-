@@ -1,0 +1,14 @@
+# Archivos y carpetas a ignorar por Git
+node_modules/
+.env
+.env.*
+*.log
+db.sqlite
+.DS_Store
+npm-debug.log
+yarn-error.log
+package-lock.json
+# Visual Studio Code
+.vscode/
+# Sistema operativo
+Thumbs.db
